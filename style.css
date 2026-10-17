@@ -8,8 +8,14 @@ html,body{
     height:100%;
 }
 
+body{
+    background:
+    linear-gradient(rgba(199, 156, 193, 0.9), rgba(137, 223, 230, 0.9)),
+    url("assets/portfolio.jpeg") center / cover fixed;
+}
+
 #head{
-    background-color:aquamarine;
+    background-color:brown;
     position:sticky;
     top:0%;
     display:flex;
@@ -21,18 +27,22 @@ html,body{
     #navbar{
         display:flex;
         gap:30px;
+        color:crimson;
     }
 }
 #hero{
     display:flex;
+    min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    background-color: #414141;
+    /* background-color: #414141; */
     color:blanchedalmond;
+    font-size: 30px;
     height:100%;
     margin:10px;
     padding:10px;
     .profile{
+        border-radius: 70%;
         object-fit:cover;
     }
 }
@@ -42,7 +52,7 @@ html,body{
     gap:30px;
     margin:10px;
     padding:10px;
-    background-color:cadetblue;
+    background-color:rgb(19, 20, 20);
 }
 footer{
     background-color: #414141;
