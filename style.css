@@ -10,27 +10,61 @@ html,body{
 
 body{
     background:
-    linear-gradient(rgba(199, 156, 193, 0.9), rgba(137, 223, 230, 0.9)),
+    linear-gradient(rgba(199, 156, 193, 0.7), rgba(137, 223, 230, 0.7)),
     url("assets/portfolio.jpeg") center / cover fixed;
 }
 
-#head{
-    background-color:brown;
-    position:sticky;
-    top:0%;
+.header{
+    background:transparent;
     display:flex;
     justify-content: space-between;
     margin:10px;
     padding:10px;
     align-items: center;
-
-    #navbar{
+}
+#name{
+    font-size: 25px;
+    color:white;
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        #b65151,
+        #1f1004
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+#navbar{
         display:flex;
         gap:30px;
-        color:crimson;
     }
+
+#navbar a{
+            text-decoration:none;
+            color:white;
+            font-size: 20px;
+            font-weight:500;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+
+        }
+
+#navbar a:hover{
+    background:white;
+    color:darkgreen;
+
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+#navbar a:active{
+    transform: scale(0.8);
+
 }
-#hero{
+.hero{
     display:flex;
     min-height: 100vh;
     justify-content: space-between;
@@ -41,11 +75,12 @@ body{
     height:100%;
     margin:10px;
     padding:10px;
-    .profile{
-        border-radius: 70%;
+}
+#profile{
+        border-radius: 50%;
         object-fit:cover;
     }
-}
+
 #social{
     display:flex;
     justify-content: center;
