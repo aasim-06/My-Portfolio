@@ -22,7 +22,7 @@ body{
     padding:10px;
     align-items: center;
 }
-#name{
+.name{
     font-size: 25px;
     color:white;
     letter-spacing: 2px;
@@ -35,6 +35,7 @@ body{
     -webkit-text-fill-color: transparent;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
+
 #navbar{
         display:flex;
         gap:30px;
@@ -64,20 +65,60 @@ body{
     transform: scale(0.8);
 
 }
+#hire{
+    display:flex;
+    gap:30px; 
+    
+      
+}
+
+#hire a{
+    text-decoration: none;
+    color:darkgreen;
+    padding:10px 30px;
+    border-radius: 25px;
+    border: 2px solid rgba(7, 36, 7, 0.3);
+    background:white ;
+    transition: all 0.3s ease;
+} 
+#hire a:hover{
+    transform:translateY(-3px) ;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+   
+}
+#hire a:active{
+    transform: scale(0.9);
+    
+
+}
 .hero{
     display:flex;
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #414141; */
-    color:blanchedalmond;
+    /* color:blanchedalmond; */
     font-size: 30px;
     height:100%;
     margin:10px;
     padding:10px;
 }
+.hero-text h1,
+.hero-text p{
+      font-size: 25px;
+    color:white;
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        #a01414,
+        #9a4601
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+
+}
 #profile{
-        border-radius: 50%;
+        border-radius: 40px;
         object-fit:cover;
     }
 
