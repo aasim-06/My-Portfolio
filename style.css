@@ -76,21 +76,29 @@ body{
     text-decoration: none;
     color:darkgreen;
     padding:10px 30px;
-    border-radius: 25px;
+    border-radius: 10px;
     border: 2px solid rgba(7, 36, 7, 0.3);
     background:white ;
     transition: all 0.3s ease;
 } 
+#hire a{animation: pulse 2s infinite;}
+@keyframes pulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
 #hire a:hover{
-    transform:translateY(-3px) ;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
    
 }
-#hire a:active{
+/* #hire a:active{
     transform: scale(0.9);
     
 
-}
+} */
 .hero{
     display:flex;
     min-height: 100vh;
