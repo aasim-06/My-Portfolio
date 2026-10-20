@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-html,body{
-    height:100%;
+html{
+    min-height:100%;
 }
 
 body{
@@ -68,8 +68,7 @@ body{
 #hire{
     display:flex;
     gap:30px; 
-    
-      
+    margin:20px 0px 50px 5px;
 }
 
 #hire a{
@@ -79,7 +78,7 @@ body{
     border-radius: 10px;
     border: 2px solid rgba(7, 36, 7, 0.3);
     background:white ;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 } 
 #hire a{animation: pulse 2s infinite;}
 @keyframes pulse{
@@ -101,13 +100,10 @@ body{
 } */
 .hero{
     display:flex;
-    min-height: 100vh;
+    min-height: 85vh;
     justify-content: space-between;
     align-items: center;
-    /* color:blanchedalmond; */
     font-size: 30px;
-    height:100%;
-    margin:10px;
     padding:10px;
 }
 .hero-text h1,
@@ -128,17 +124,42 @@ body{
 #profile{
         border-radius: 40px;
         object-fit:cover;
-    }
-
+        margin:10px;
+}
 #social{
     display:flex;
-    justify-content: center;
-    gap:30px;
-    margin:10px;
-    padding:10px;
-    background-color:rgb(19, 20, 20);
+    gap:50px;
+    margin:20px 0px 20px 5px;
 }
+#social a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    overflow: hidden;
+     background: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#social img{
+    height:80%;
+    width: 80%;
+    object-fit:contain;
+
+}
+/* #social a{ animation:fade 2s infinite;}
+@keyframes fade{ 
+    from{opacity:0; translateX(-30px);}
+    to{opacity:1; translateX(0px);}
+
+} */
+
 footer{
+    display:flex;
+    position:sticky;
+    bottom:0%;
     background-color: #414141;
     color:blanchedalmond;
     text-align: center;
