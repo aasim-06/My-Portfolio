@@ -17,14 +17,14 @@ body{
 .header{
     background:transparent;
     display:flex;
+    align-items: center;
     justify-content:space-between;
     margin:10px;
     padding:10px;
-    align-items: center;
+    
 }
 .name{
     font-size: 25px;
-    color:white;
     letter-spacing: 2px;
     background: linear-gradient(
         90deg,
@@ -32,7 +32,7 @@ body{
         #1f1004
     );
     -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color:transparent;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -49,7 +49,6 @@ body{
             font-weight:500;
             padding: 10px 15px;
             border-radius: 20px;
-            background: rgba(255, 255, 255, 0.1);
             border: 2px solid rgba(255, 255, 255, 0.5);
             transition: all 0.3s ease;
 
@@ -66,39 +65,6 @@ body{
     transform: scale(0.8);
 
 }
-#hire{
-    display:flex;
-    gap:30px; 
-    margin:20px 0px 50px 5px;
-}
-
-#hire a{
-    text-decoration: none;
-    color:darkgreen;
-    padding:10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(7, 36, 7, 0.3);
-    background:white ;
-    transition: transform 0.3s ease;
-} 
-#hire a{animation: pulse 2s infinite;}
-@keyframes pulse{
-    0%,100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-}
-#hire a:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-   
-}
-/* #hire a:active{
-    transform: scale(0.9);
-    
-
-} */
 .hero{
     display:flex;
     min-height: 85vh;
@@ -110,7 +76,6 @@ body{
 .hero-text h1,
 .hero-text p{
       font-size: 25px;
-    color:white;
     letter-spacing: 2px;
     background: linear-gradient(
         90deg,
@@ -127,6 +92,39 @@ body{
         object-fit:cover;
         margin:10px;
 }
+#hire{
+    display:flex;
+    gap:30px; 
+    margin:20px 0px 50px 5px;
+}
+
+#hire a{
+    text-decoration: none;
+     background:white ;
+    color:darkgreen;
+    padding:10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(7, 36, 7, 0.3);
+    transition: all 0.3s ease;
+} 
+#hire a{animation: pulse 2s infinite;}
+@keyframes pulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+#hire a:hover{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+   
+}
+#hire a:active{
+    transform: scale(0.9);
+    
+
+}
 #social{
     display:flex;
     gap:50px;
@@ -140,9 +138,8 @@ body{
     height:56px;
     border-radius:50%;
     overflow: hidden;
-     background: white;
+    background: white;
     border: 2px solid rgba(255, 255, 255, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #social img{
     height:80%;
